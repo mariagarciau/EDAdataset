@@ -18,3 +18,9 @@ data.hist("Area Population")
 data.plot()
 
 plt.show()
+
+print(sns.boxplot(data=data, x='Avg. Area Income', y='Area Population'))
+
+for column in data:
+        sns.histplot(x=data[column])
+        plt.show()
