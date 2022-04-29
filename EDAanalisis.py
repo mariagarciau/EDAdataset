@@ -8,3 +8,4 @@ data.head()
 
 data.isnull().sum()
 data.info()
+data.describe()
