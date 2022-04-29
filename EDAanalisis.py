@@ -6,4 +6,5 @@ import seaborn as sns
 data = pd.read_csv("USA_Housing.csv")
 data.head()
 
-print(data.isnull().sum())
+data.isnull().sum()
+data.info()
