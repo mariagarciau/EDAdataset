@@ -7,5 +7,8 @@ data = pd.read_csv("USA_Housing.csv")
 data.head()
 
 data.isnull().sum()
-data.info()
-data.describe()
+#data.info()
+#data.describe()
+
+data.hist()
+data.hist("Area Population")
