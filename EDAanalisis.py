@@ -19,7 +19,13 @@ data.plot()
 
 plt.show()
 
-print(sns.boxplot(data=data, x='Avg. Area Income', y='Area Population'))
+sns.heatmap(data.corr(), annot=True)
+plt.show()
+
+sns.pairplot(data)
+plt.show()
+
+#sns.boxplot(data=data, x='Avg. Area Income', y='Area Population')
 
 for column in data:
         sns.histplot(x=data[column])
