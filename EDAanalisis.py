@@ -5,10 +5,16 @@ import seaborn as sns
 
 data = pd.read_csv("USA_Housing.csv")
 data.head()
+data.columns
 
 data.isnull().sum()
-#data.info()
-#data.describe()
+data.duplicated().sum()
+data.info()
+data.describe()
 
 data.hist()
 data.hist("Area Population")
+
+data.plot()
+
+plt.show()
